@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+:root {
+  --bg: #901c12dc;
+  --primary: #1442ce;
+  --secondary: #111827;
+  --accent: #a41e1e;
+  --text: #333;
+  --white: #fff;
+  --radius: 12px;
+  --shadow: 0 4px 12px rgba(0,0,0,0.1);
+  --font-main: 'Inter', sans-serif;
+}
+
+body {
+  font-family: var(--font-main, 'Inter', sans-serif);
+  color: var(--text, #333);
+  margin: 0;
+  padding: 2rem;
+  min-height: 100vh;
+  background:
+  linear-gradient(rgba(255, 255, 255, 0.384), rgba(152, 158, 174, 0.9)),
+  url('https://images.unsplash.com/photo-1554284126-aa88f22d8b74?auto=format&fit=crop&w=1950&q=80');
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+
+/* Titre */
+h1 {
+  font-family: 'Orbitron', sans-serif; /* Style techno-sport */
+  font-size: 4rem;
+  font-weight: 900;
+  color: #05050e; /* Orange énergique */
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  text-align: center;
+  text-shadow: 0 0 15px rgba(199, 36, 36, 0.819);
+  margin-bottom: 30px;
+}
+h3 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: #451818;
+  
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+  margin: 40px 0 20px;
+
+  position: relative;
+}
+
+h3::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 4px;
+  margin: 10px auto 0;
+  background: linear-gradient(90deg, #941f0f, #ff9800);
+  border-radius: 10px;
+}
+h2 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: #451818;
+  
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+  margin: 40px 0 20px;
+    background: linear-gradient(90deg, #cd8d85a2, #8b2929d3);
+
+  position: relative;
+}
+
+h2::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 4px;
+  margin: 10px auto 0;
+  background: linear-gradient(90deg, #941f0f, #ff9800);
+  border-radius: 10px;
+}
+
+
+
+/* Formulaire */
+
+
+input,
+select {
+  width: 260px;
+  padding: 0.75rem 1rem;
+  border: 1px solid #ccccccea;
+  border-radius: var(--radius);
+  font-size: 1rem;
+  background: var(--white);
+  transition: 0.3s ease;
+}
+
+input:focus,
+select:focus {
+  border-color: var(--primary);
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(31, 111, 235, 0.15);
+}
+
+/* Bouton */
+button {
+  padding: 0.75rem 2rem;
+  background-color: var(--accent);
+  color: var(--white);
+  font-weight: bold;
+  border: none;
+  border-radius: var(--radius);
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s ease;
+  box-shadow: var(--shadow);
+  margin-top: 1rem;
+}
+
+button:hover {
+  background-color: #661511;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Tableau */
+table {
+  width: 100%;
+  max-width: 1100px;
+  margin: 3rem auto;
+  background-color: var(--white);
+  border-collapse: collapse;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+
+th,
+td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+th {
+  background-color: var(--bg);
+  color: var(--secondary);
+  font-weight: 700;
+}
+
+tr:hover {
+  background-color: #f0f0f0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  form {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  input,
+  select {
+    width: 100%;
+  }
+
+  button {
+    width: 100%;
+  }
+
+  table {
+    font-size: 0.85rem;
+  }
+}
+/* src/index.css */
+.auth-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #850303;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(205, 10, 10);
+}
+
+.auth-container form div {
+    margin-bottom: 15px;
+}
+
+.auth-container label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.auth-container input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+.auth-container button {
+    background-color: #6c1313;
+    color: rgb(0, 0, 0);
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.auth-container button:hover {
+    background-color: #a04545;
+}
