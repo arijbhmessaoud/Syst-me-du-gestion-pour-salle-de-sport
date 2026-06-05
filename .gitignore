@@ -1,0 +1,24 @@
+# dependencies
+node_modules/
+
+# environment
+.env
+
+# build outputs
+build/
+dist/
+
+# macOS
+.DS_Store
+
+# logs
+npm-debug.log*
+
+# cache
+.cache/
+
+# coverage
+coverage/
+
+# editor
+.vscode/
