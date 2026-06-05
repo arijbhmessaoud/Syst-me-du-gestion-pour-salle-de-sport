@@ -1,6 +1,7 @@
 # Backend — Gestion des abonnés
 
-Ce dossier contient les sources du backend pour gérer les abonnés de la salle de sport (API Express + MongoDB via Mongoose). Les fichiers principaux du backend sont situés à la racine du projet : `server.js`, `routes/`, `models/`.
+Ce dossier contient les sources du backend pour gérer les abonnés
+ de la salle de sport (API Express + MongoDB via Mongoose). Les fichiers principaux du backend sont situés à la racine du projet : `server.js`, `routes/`, `models/`.
 
 ## Prérequis
 
